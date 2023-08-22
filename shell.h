@@ -20,4 +20,4 @@ void handle_error(char *error_message);
 void handle_eof_error(char *strg);
 void handle_eof_or_error(void);
 
-#endif	/* shell_h */
+#endif	/* SHELL_H */
