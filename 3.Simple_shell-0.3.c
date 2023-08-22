@@ -39,7 +39,7 @@ char *get_path(char *cmd)
  * opt_chars_read - runs set checks if end of file
  * is not reached.
  *
- * Return:
+ * Return: 1 on success
  */
 int opt_chars_read(void)
 {
