@@ -2,11 +2,11 @@
 
 /**
  * handle_error - handles error messagess
- * @error_message: error massage displayed
+ * @strg: error massage displayed
  *
  * Return: 1
  */
-void handle-error(char *strg[])
+void handle_error(char *strg[])
 {
 	printf("strg[]");
 	exit(1);
