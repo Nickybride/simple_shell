@@ -96,7 +96,7 @@ int main(void)
 
 /**
  * forkChild - calls child process
- * @args: arguement number.
+ * @args: arguement number/count
  */
 void forkChild(void)
 {
