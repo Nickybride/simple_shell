@@ -2,15 +2,19 @@
 
 /**
  * handle_error - handles error messagess
+ * @error_message: error massage displayed
  *
  * Return: 1
  */
 void handle_error(char *error_message)
 {
-        printf("error_message");
-        exit(1);
+	printf("error_message");
+	exit(1);
 }
 
+/**
+ * handle_eof_or_error - this function handles NULL errors
+ */
 void handle_eof_or_error(void)
 {
 	if (feof(stdin))
@@ -60,6 +64,7 @@ int main(void)
 		if (cmd[chars_read - 1] == '\n')
 			cmd[chars_read - 1] = '\0';
 		pid_t child_pid = fork();
+
 		if (child_pid == -1)
 		{
 			perror("fork failed");	/* If child process fails*/
