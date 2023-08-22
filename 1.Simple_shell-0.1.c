@@ -74,6 +74,7 @@ int main(void)
 		else
 			wait(NULL);	/* Wait() waits till the process finish */
 	}
-	/*your code goes here */
+	free(cmd);
+	return (EXIT_SUCCESS);
 }
 
