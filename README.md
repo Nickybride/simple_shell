@@ -2,7 +2,7 @@
 
 ![Simple Shell Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7py0JpjWHwipKYyQSmMWHsuJ9jiyuf1YqLQ&usqp=CAU)
 
-**Authors:** Joana Ehun, Samuel Zerd Ashigbui
+**Authors:** Joana Bride Ehun, Samuel Zerd Ashigbui
 
 **Project Start Date:** Aug 9, 2023 6:00 AM
 **Project End Date:** Aug 24, 2023 6:00 AM
