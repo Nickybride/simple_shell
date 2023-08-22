@@ -6,9 +6,9 @@
  *
  * Return: 1
  */
-void handle_error(char *error_message)
+void handle-error(char *strg[])
 {
-	printf("error_message");
+	printf("strg[]");
 	exit(1);
 }
 
@@ -63,23 +63,23 @@ int main(void)
 		/* Remove the newline character from the command */
 		if (cmd[chars_read - 1] == '\n')
 			cmd[chars_read - 1] = '\0';
-		pid_t child_pid = fork();
+		pid_t kid_pid = fork();
 
-		if (child_pid == -1)
+		if (kid_pid == -1)
 		{
 			perror("fork failed");	/* If child process fails*/
 			exit(1);
 		}
-		else if (child_pid == 0)
+		else if (kid_pid == 0)
 		{
 			execve(cmd, (char *const []){cmd, NULL}, NULL);
 			perror("execve");
 			exit(EXIT_FAILURE);
 		}
 		else
-			wait(NULL);	/* Wait() waits till the process finish */
+			wait(NULL);
 	}
 	free(cmd);
-	return (EXIT_SUCCESS);
+	return (0);
 }
 
