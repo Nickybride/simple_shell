@@ -64,25 +64,25 @@ int main(void)
 		/* Tokenize the command and arguments */
 		char *args[40]; /* Assuming max 39 arguments */
 
-		char *token = strtok(cmd, " ");
-		int i = 0;
+		char *tokken = strtok(cmd, " ");
+		int j = 0;
 
 		while (token != NULL)
 		{
-			args[i++] = token;
-			token = strtok(NULL, " ");
+			args[j++] = token;
+			tokken = strtok(NULL, " ");
 		}
 
 		/* // Last element of the array must be NULL */
-		args[i] = NULL;
+		args[j] = NULL;
 		pid_t child_pid = fork();
 
-		if (child_pid == -1)
+		if (kid_pid == -1)
 		{
 			perror("fork");
 			exit(EXIT_FAILURE);
 		}
-		if (child_pid == 0)
+		if (kid_pid == 0)
 			forkChild();
 
 		/*Parent process waits for child process */
