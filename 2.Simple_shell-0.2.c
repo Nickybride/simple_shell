@@ -3,7 +3,6 @@
 /**
  * prompt - prints cisfun$ on the stdio
  */
-void forkChild(void);
 
 void prompt(void)
 {
@@ -45,7 +44,7 @@ int checks_chars_read(void)
  * Return: 0 on success.
  */
 
-int main(void)
+int handle_CLI_argument(void)
 {
 	char *cmd = NULL;
 	size_t buffsize = 0;
